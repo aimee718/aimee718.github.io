@@ -83,10 +83,39 @@
       <header class="w3-display-container w3-container" style="background-color: #FCFBFB;">
         <!-- <p class="w3-left">Jeans</p> -->
         <p class="w3-right">
-          <i class="fa fa-shopping-cart w3-margin-right"></i>
-          <!-- <i class="fas fa-shopping-cart"></i>
-      <i class="fas fa-search"></i> -->
-          <i class="fa fa-search"></i>
+          <!-- <i class="fa fa-shopping-cart w3-margin-right"></i> -->
+          <!------->
+          <div class="u-pull-right">
+            <ul>
+                <div class="submenu">
+                        <!--<img src="img/cart.png" id="img-cart">-->
+                        <i class="fa fa-shopping-cart w3-margin-right"></i>
+                        <i class="fa fa-search"></i>
+                        <div id="shopping-cart">
+                                <table id="cart-content" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Qty</th>
+                                            <th>Name</th>
+                                            <th>Price</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                          <th>2</th>
+                                          <th>Skinny Jean for women (Light)</th>
+                                          <th>$19.99</th>
+                                          <th></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+    
+                                <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
+                        </div>
+                      </div>
+            </ul>
+        </div>
+        <!-------------->
         </p>
       </header>
 
@@ -107,7 +136,10 @@
 
       <!-- Product grid -->
       <!-- <div class="productlist"> -->
-        <div id="showproduct" class="w3-row w3-grayscale"></div>
+        <div class="w3-display-container w3-container">
+          <div id="showproduct" class="w3-row w3-grayscale"></div>
+        </div>
+        
       <!-- </div> -->
 
       <!---------------------------->

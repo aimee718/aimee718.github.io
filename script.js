@@ -35,7 +35,7 @@
             // html += tableHelper.countryCodeToFlagImg(table[i].code);
             // html += '</td><td>' + table[i].code;
             
-
+            //html += '<div class="w3-display-container w3-container">';
             html += '<div class="w3-col l3 s6">';
             html += '  <div class="w3-container card">';
             html += '   <a href="#openModal"><img id="id_img" class="p_image" ';
@@ -51,6 +51,7 @@
             html += '   </div>';
       
             html += '</div>';
+           // html +='</div>';
           
             // html += '</div>';
             //html += '<div id="descp3" style="" value="' + table[i].description + '">' + table[i].description + '</div>';
@@ -84,19 +85,43 @@
 
      //alert(ret2[0].name);
 
-      let html='';
-      html += '<div id="openModal" class="modalDialog">';
-          html += '    <div>';
-          html += '        <a href="#close" title="Close" class="close">X</a>';
-          html += '        <h2 id="aaa">Product Description</h2>';
-          html += '        <div style= "font-family: Verdana; font-size: 12px">Name: '+ ret2[0].name +'</br>';
-          html += '        Price: $'+ ret2[0].price +'</br>';
-          html += '        Descp.: '+ ret2[0].description +'</div></br>';
-          html += '        <img src="./Img/'+ ret2[0].image +'"';
-          html+= ' style="width:360px ; height:510px"></img>'; 
+      // let html='';
+      // html += '<div id="openModal" class="modalDialog">';
+      //     html += '    <div>';
+      //     html += '        <a href="#close" title="Close" class="close">X</a>';
+      //     html += '        <h2 id="aaa">Product Description</h2>';
+      //     html += '        <div style= "font-family: Verdana; font-size: 12px">Name: '+ ret2[0].name +'</br>';
+      //     html += '        Price: $'+ ret2[0].price +'</br>';
+      //     html += '        Descp.: '+ ret2[0].description +'</div></br>';
+      //     html += '        <img src="./Img/'+ ret2[0].image +'"';
+      //     html+= ' style="width:360px ; height:510px"></img>'; 
  
-          html += '    </div>';
-          html += '</div>';
+      //     html += '    </div>';
+      //     html += '</div>';
+
+      let html='';
+            html += '<div id="openModal" class="modalDialog" >';
+                html += '    <div >';
+                html += '        <a href="#close" title="Close" class="close">X</a>';
+                html += '        <h2 id="aaa">Product Description</h2>';
+                html += '        Name: '+ ret2[0].name +'</br>';
+                html += '        Price: $'+ ret2[0].price +'</br>';
+                html += '        Descp.: '+ ret2[0].description +'</br>';
+                //----------------------------------
+                html += '        <div class="row">';
+                html += '          <form class="add-to-cart" action="#" method="post">';
+                html += '            <div class="column"><p>Qty:<input text="text" size="2" value="1"/></p></div>'; 
+                html += '            <div class="column">';
+                html += '            <p><input type="submit" value="Add to cart" class="btn" /></p></div>';
+                html += '          </form>';
+                html += '        </div>';
+                html += '        <div><img src="./w3images/'+ ret2[0].image +'" ';
+                html += '          style="width:360px; height:510px"></img>';
+                html += '         </div>';
+                //---------------------------------               
+                html += '    </div>';
+
+                html += '</div>';
 
           document.getElementById('bb3').innerHTML = html;
       //alert(id);
