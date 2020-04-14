@@ -109,7 +109,7 @@
                 html += '        Descp.: '+ ret2[0].description +'</br>';
                 //----------------------------------
                 html += '        <div class="row">';
-                html += '          <form class="add-to-cart" action="index.html" method="post">';
+                html += '          <form class="add-to-cart" action="https://aimee718.github.io/" method="post">';
                 html += '            <div class="column"><p>Qty:<input text="text" size="2" value="1"/></p></div>'; 
                 html += '            <div class="column">';
                 html += '            <p><input type="submit" value="Add to cart" class="btn" /></p></div>';
